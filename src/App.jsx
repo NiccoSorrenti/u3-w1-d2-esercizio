@@ -4,13 +4,16 @@ import MyNavbar from './components/MyNavbar';
 import MyFooter from './components/MyFooter';
 import MyWelcome from './components/MyWelcome';
 import AllTheBooks from './components/AllTheBooks';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
     <>
       <MyNavbar />
-      <MyWelcome />
-      <AllTheBooks />
+      <Container>
+        <MyWelcome />
+        <AllTheBooks />
+      </Container>
       <MyFooter />
     </>
   );

@@ -9,16 +9,18 @@ const AllTheBooks = function () {
       <Row className="g-2 justify-content-between">
         {fantasy.map((book) => {
           return (
-            <Card className="w-25">
-              <Card.Img variant="top" className="w-100 h-100" src={book.img} />
-              <Card.Body>
-                <Card.Title>{book.title}</Card.Title>
-                <Card.Text>{book.category}</Card.Text>
-                <Button variant="primary" className="align-items-baseline">
-                  {book.price}€
-                </Button>
-              </Card.Body>
-            </Card>
+            <Col xs={12} md={8} lg={3}>
+              <Card>
+                <Card.Img variant="top" src={book.img} />
+                <Card.Body>
+                  <Card.Title>{book.title}</Card.Title>
+                  <Card.Text>{book.category}</Card.Text>
+                  <Button variant="primary" className="align-items-baseline">
+                    {book.price}€
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
           );
         })}
       </Row>
