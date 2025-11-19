@@ -21,7 +21,7 @@ function App() {
           description={fantasy[0].category}
         />
         <BookList />
-        <AllTheBooks />
+        {/* <AllTheBooks /> */}
       </Container>
       <MyFooter />
     </>
